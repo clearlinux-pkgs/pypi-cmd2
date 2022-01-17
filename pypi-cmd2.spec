@@ -4,7 +4,7 @@
 #
 Name     : pypi-cmd2
 Version  : 2.3.3
-Release  : 112
+Release  : 113
 URL      : https://files.pythonhosted.org/packages/3e/56/82be7e9c7f2de572e2c618f5c5be6ada5038978e4732f37f5d47fe0d3170/cmd2-2.3.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3e/56/82be7e9c7f2de572e2c618f5c5be6ada5038978e4732f37f5d47fe0d3170/cmd2-2.3.3.tar.gz
 Summary  : A tool for building interactive command line apps
@@ -15,16 +15,12 @@ Requires: pypi-cmd2-python = %{version}-%{release}
 Requires: pypi-cmd2-python3 = %{version}-%{release}
 Requires: which
 BuildRequires : buildreq-distutils3
-Provides: cmd2
-Provides: cmd2-python
-Provides: cmd2-python3
 BuildRequires : pypi(attrs)
 BuildRequires : pypi(pyperclip)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
 BuildRequires : pypi(wcwidth)
 BuildRequires : pypi(wheel)
-BuildRequires : setuptools_scm
 
 %description
 cmd2 is a tool for building interactive command line applications in Python.
@@ -73,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641423952
+export SOURCE_DATE_EPOCH=1642463079
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
