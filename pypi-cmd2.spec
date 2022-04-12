@@ -4,7 +4,7 @@
 #
 Name     : pypi-cmd2
 Version  : 2.4.0
-Release  : 114
+Release  : 115
 URL      : https://files.pythonhosted.org/packages/7b/d9/87486a680f7961105ca5f49d0701187447ec6620538f512bc3942e976e6f/cmd2-2.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7b/d9/87486a680f7961105ca5f49d0701187447ec6620538f512bc3942e976e6f/cmd2-2.4.0.tar.gz
 Summary  : A tool for building interactive command line apps
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1645637382
+export SOURCE_DATE_EPOCH=1649729251
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -85,6 +85,7 @@ python3 -m build --wheel --skip-dependency-check --no-isolation
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-cmd2
+cp %{_builddir}/cmd2-2.4.0/LICENSE %{buildroot}/usr/share/package-licenses/pypi-cmd2/b2e34f088b600127f76aa6629d3d43f3179e8fe5
 cp %{_builddir}/cmd2-2.4.0/plugins/template/LICENSE %{buildroot}/usr/share/package-licenses/pypi-cmd2/3e6eb52ad8a3906e168e16d4a635f441ff29e02b
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
@@ -97,6 +98,7 @@ echo ----[ mark ]----
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/pypi-cmd2/3e6eb52ad8a3906e168e16d4a635f441ff29e02b
+/usr/share/package-licenses/pypi-cmd2/b2e34f088b600127f76aa6629d3d43f3179e8fe5
 
 %files python
 %defattr(-,root,root,-)
