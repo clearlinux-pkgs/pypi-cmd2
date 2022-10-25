@@ -4,7 +4,7 @@
 #
 Name     : pypi-cmd2
 Version  : 2.4.2
-Release  : 123
+Release  : 124
 URL      : https://files.pythonhosted.org/packages/39/a0/830934f19f07e77c7d332fd5b41358611afc8d33d8cea78259b9a5d7f8ef/cmd2-2.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/39/a0/830934f19f07e77c7d332fd5b41358611afc8d33d8cea78259b9a5d7f8ef/cmd2-2.4.2.tar.gz
 Summary  : A tool for building interactive command line apps
