@@ -7,7 +7,7 @@
 #
 Name     : pypi-cmd2
 Version  : 2.5.0
-Release  : 131
+Release  : 132
 URL      : https://files.pythonhosted.org/packages/b1/f8/1d6f1a54378a12acc9e8cc68aa69e2463bbb02f75878da4ad0c5e4d37751/cmd2-2.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b1/f8/1d6f1a54378a12acc9e8cc68aa69e2463bbb02f75878da4ad0c5e4d37751/cmd2-2.5.0.tar.gz
 Summary  : A tool for building interactive command line apps
