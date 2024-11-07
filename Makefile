@@ -1,5 +1,5 @@
 PKG_NAME := pypi-cmd2
-URL = https://files.pythonhosted.org/packages/10/78/8a86270a643798e488cc7d12c3dba3e227f63f69d8fb2233740395ed19d4/cmd2-2.5.3.tar.gz
+URL = https://files.pythonhosted.org/packages/46/47/3f621e0ddf0c5a1f69d3a0c8135d1f42fa6ea9da650e6882eaba979be6cb/cmd2-2.5.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
