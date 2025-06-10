@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : pypi-cmd2
-Version  : 2.6.0
-Release  : 143
-URL      : https://files.pythonhosted.org/packages/35/94/41f51eb812275bb74359cbbd7e06586a406c29a745b689779eb3a3b393ca/cmd2-2.6.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/35/94/41f51eb812275bb74359cbbd7e06586a406c29a745b689779eb3a3b393ca/cmd2-2.6.0.tar.gz
+Version  : 2.6.1
+Release  : 144
+URL      : https://files.pythonhosted.org/packages/a2/6a/bbd2cb85f5da7c6a53fea13ac1b15c4b1b31bfc5cbada31a0ee6be92e2e8/cmd2-2.6.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/a2/6a/bbd2cb85f5da7c6a53fea13ac1b15c4b1b31bfc5cbada31a0ee6be92e2e8/cmd2-2.6.1.tar.gz
 Summary  : A tool for building interactive command line apps
 Group    : Development/Tools
 License  : MIT
@@ -63,10 +63,10 @@ python3 components for the pypi-cmd2 package.
 
 
 %prep
-%setup -q -n cmd2-2.6.0
-cd %{_builddir}/cmd2-2.6.0
+%setup -q -n cmd2-2.6.1
+cd %{_builddir}/cmd2-2.6.1
 pushd ..
-cp -a cmd2-2.6.0 buildavx2
+cp -a cmd2-2.6.1 buildavx2
 popd
 
 %build
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1748884696
+export SOURCE_DATE_EPOCH=1749573249
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
