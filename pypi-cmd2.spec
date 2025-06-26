@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : pypi-cmd2
-Version  : 2.6.1
-Release  : 144
-URL      : https://files.pythonhosted.org/packages/a2/6a/bbd2cb85f5da7c6a53fea13ac1b15c4b1b31bfc5cbada31a0ee6be92e2e8/cmd2-2.6.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/a2/6a/bbd2cb85f5da7c6a53fea13ac1b15c4b1b31bfc5cbada31a0ee6be92e2e8/cmd2-2.6.1.tar.gz
+Version  : 2.6.2
+Release  : 145
+URL      : https://files.pythonhosted.org/packages/9d/29/e0dd8ca27c5ee55feea1a423ac0b55c7bc68b551d393085ae7c6da12a2e9/cmd2-2.6.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/9d/29/e0dd8ca27c5ee55feea1a423ac0b55c7bc68b551d393085ae7c6da12a2e9/cmd2-2.6.2.tar.gz
 Summary  : A tool for building interactive command line apps
 Group    : Development/Tools
 License  : MIT
@@ -63,10 +63,10 @@ python3 components for the pypi-cmd2 package.
 
 
 %prep
-%setup -q -n cmd2-2.6.1
-cd %{_builddir}/cmd2-2.6.1
+%setup -q -n cmd2-2.6.2
+cd %{_builddir}/cmd2-2.6.2
 pushd ..
-cp -a cmd2-2.6.1 buildavx2
+cp -a cmd2-2.6.2 buildavx2
 popd
 
 %build
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1749573249
+export SOURCE_DATE_EPOCH=1750977156
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -120,7 +120,6 @@ LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-cmd2
-cp %{_builddir}/cmd2-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-cmd2/a714850928f061158512b93be1cc770171ed1175 || :
 cp %{_builddir}/cmd2-%{version}/plugins/template/LICENSE %{buildroot}/usr/share/package-licenses/pypi-cmd2/3e6eb52ad8a3906e168e16d4a635f441ff29e02b || :
 python3 -m installer --destdir=%{buildroot} dist/*.whl
 echo ----[ mark ]----
@@ -142,7 +141,6 @@ popd
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/pypi-cmd2/3e6eb52ad8a3906e168e16d4a635f441ff29e02b
-/usr/share/package-licenses/pypi-cmd2/a714850928f061158512b93be1cc770171ed1175
 
 %files python
 %defattr(-,root,root,-)
